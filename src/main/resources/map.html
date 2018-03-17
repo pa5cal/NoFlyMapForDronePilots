@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+  	<meta name="description" content="NoFlyMapForDronePilots" >
+	<meta name="author" content="Pascal Neis, neis-one.org">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+	<script src="./map.js"></script>
+	
+	<link rel="Shortcut Icon" href="https://neis-one.org/favicon.png" type="image/png">
+ 	
+	<style>
+		.headline{ padding-left:30px; padding-top:5px; font-size:15px; font-weight:bold; font-family:Verdana; }
+		.copyright { padding-left:30px; padding-top:5px; font-size:9px; color:grey; font-family:Verdana; }
+		.map { position: absolute; top: 55px; right: 40px; bottom: 40px; left: 40px; }
+	</style>
+  	<title id="title">A map for drone pilots</title>
+  </head>
+  <body>
+
+	<div class="headline">NoFlyMapForDronePilots</div>
+  	<div class="copyright">Copyright &copy; Pascal Neis <a target="_blank" href="http://neis-one.org">(neis-one.org)</a> - Map data &copy; <a target="_blank" href="https://openstreetmap.org">OpenStreetMap</a> contributors</div>
+	<div class="map" id="map"></div>
+	<script type="text/javascript">
+		//Create Map Object
+		var map = new L.Map('map', {zoomControl: true}); 
+		//Create Layer
+		map.addLayer(L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')); 
+		//Create Overlay
+		var polygons = [];
+	    for (var i = 0; i < droneMapElements.length; ++i) {
+	        polygons.push(L.polygon(droneMapElements[i], {color: 'red'}));
+	    }
+		map.fitBounds(L.featureGroup(polygons).addTo(map).getBounds());
+	</script>
+  </body>
+</html>
