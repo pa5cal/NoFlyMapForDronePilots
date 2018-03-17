@@ -27,7 +27,8 @@ NoFlyMapForDronePilots needs different dependencies:
     <dependency>
         <groupId>com.vividsolutions</groupId>
         <artifactId>jts</artifactId>
-    <version>1.13
+        <version>1.13</version>
+    </dependency>
 ```
 
 LICENSE
