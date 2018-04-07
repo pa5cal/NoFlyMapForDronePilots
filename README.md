@@ -6,8 +6,7 @@ The data of the OpenStreetMap project is applied for the background map and also
 
 ![NoFlyMapForDronePilots](img/NoFlyMapForDronePilots.png?raw=true "NoFlyMapForDronePilots")
 
-You will find some more information in the FOSSGIS 2018 talk here: #TBA
-
+You will find some more information in the FOSSGIS 2018 talk @ [Slideshare](https://de.slideshare.net/pascalneis/eine-konfigurierbare-karte-mit-verbotszonen-fr-drohnenflieger-auf-basis-von-openstreetmap-daten-91729057)
 
 PREREQUISITES
 -------------
