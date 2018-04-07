@@ -6,7 +6,7 @@ The data of the OpenStreetMap project is applied for the background map and also
 
 ![NoFlyMapForDronePilots](img/NoFlyMapForDronePilots.png?raw=true "NoFlyMapForDronePilots")
 
-You will find some more information in the FOSSGIS 2018 talk @ [Slideshare](https://de.slideshare.net/pascalneis/eine-konfigurierbare-karte-mit-verbotszonen-fr-drohnenflieger-auf-basis-von-openstreetmap-daten-91729057)
+You will find some more information in the FOSSGIS 2018 talk @ [Slideshare (German)](https://de.slideshare.net/pascalneis/eine-konfigurierbare-karte-mit-verbotszonen-fr-drohnenflieger-auf-basis-von-openstreetmap-daten-91729057)
 
 PREREQUISITES
 -------------
@@ -30,11 +30,23 @@ NoFlyMapForDronePilots needs different dependencies:
     </dependency>
 ```
 
+INSTALLATION NOTES
+-------
+
+To run NoFlyMapForDronePilots, you need:
+* The NoFlyMapForDronePilots .jar file, e.g., NoFlyMapForDronePilots-0.0.1-SNAPSHOT.jar (should be located in the target directoy after maven build/install)
+* Java Runtime Environment (JRE) 8, or later.
+
+HOW TO RUN
+-------
+```java
+java -Xmx1024m -cp NoFlyMapForDronePilots-0.0.1-SNAPSHOT.jar org.neis_one.noflymapfordronepilots.Main /map.properties /your-osm.osm /map.js
+```
+
 LICENSE
 -------
 
 NoFlyMapForDronePilots is available under the GNU GPL version 3 or later.
-
 
 AUTHORS
 -------
