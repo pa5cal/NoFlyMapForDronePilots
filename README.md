@@ -39,7 +39,7 @@ To run NoFlyMapForDronePilots, you need:
 
 HOW TO RUN
 -------
-```java
+```
 java -Xmx1024m -cp NoFlyMapForDronePilots-0.0.1-SNAPSHOT.jar org.neis_one.noflymapfordronepilots.Main /map.properties /your-osm.osm /map.js
 ```
 
