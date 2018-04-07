@@ -39,9 +39,10 @@ To run NoFlyMapForDronePilots, you need:
 
 HOW TO RUN
 -------
+```xml
+java -Xmx1024m -cp NoFlyMapForDronePilots-0.0.1-SNAPSHOT.jar org.neis_one.noflymapfordronepilots.Main ./map.properties ./your-osm-file.osm ./map.js
 ```
-java -Xmx1024m -cp NoFlyMapForDronePilots-0.0.1-SNAPSHOT.jar org.neis_one.noflymapfordronepilots.Main /map.properties /your-osm.osm /map.js
-```
+(map.js is the output file which contains the no fly areas as JS coordinate arrays)
 
 LICENSE
 -------
@@ -51,4 +52,4 @@ NoFlyMapForDronePilots is available under the GNU GPL version 3 or later.
 AUTHORS
 -------
 
-NoFlyMapForDronePilots was written and is maintained by Pascal Neis <neis-one.org>.
+NoFlyMapForDronePilots was written and maintained by Pascal Neis <neis-one.org>.
